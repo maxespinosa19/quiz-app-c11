@@ -1,20 +1,22 @@
-export default function Card({data, quizId, quizLength}){
-return(
-    <div className="quiz-card">
-        <p>{quizId + 1}/{quizLength}</p>
-        <h3>{data[quizId].question}</h3>
-        <ul>
-            {
-                data[quizId].options.map(
-                    (element,index) => {
-                        
-                        return(
-                        <li key ={index}>{element.answer}</li>
-                        )
-                    }
-                )
+export default function Card({ quizLength, questionId, handleAnswer, 
+  data }) {
+
+  return (
+    <div className="card">
+      <p>{questionId + 1}/{quizLength}</p>
+      <h2>{data[questionId].question}</h2>
+      <ul>
+        {
+          data[questionId].options.map(
+            (element,index) => {
+              return (
+                <li key-={index}
+                  onClick={ () => {handleAnswer(element.isCorrect)} }>{element.answer}</li>
+              );
             }
-        </ul>
+          )
+        }
+      </ul>
     </div>
-)
+  )
 }

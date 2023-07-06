@@ -1,40 +1,46 @@
-import "./QuizApp.css"
-import { useState } from "react"
-import Result from "./Result"
-import Card from "./Card"
-import data from "../../data/Quiz.json"
+import { useState } from "react";
+import Card from "./Card";
+import Result from "./Result";
+import data from "../../data/Quiz.json";
+import "./QuizApp.css";
 
-const quizLength = data.length
-export default function QuizApp(){
-    const [quizId, setQuizId] = useState(0)
-    const [score, setScore] = useState(0)
-    const[showResult,setShowResult] = useState(false)
+const quizLength = data.length;
 
-    const handleAnswer= () => {
+export default function QuizApp() {
+  const [questionId, setQuestionId] = useState(0);
+  const [score, setScore] = useState(0);
+  const [showResult, setShowResult] = useState(false);
 
-    }
-    const handleReset = () => {
+  const handleAnswer = (isCorrect) => {
+    if (isCorrect) setScore(score + 1);
 
-    }
+    const newQuestionId = questionId + 1;
 
+    (newQuestionId < quizLength) 
+      ? setQuestionId(newQuestionId)
+      : setShowResult(true);
+  }
 
+  const handleReset = () => {
+    setQuestionId(0);
+    setScore(0);
+    setShowResult(false);
+  }
 
-   
-    return(
-        <>
-        {
-            !showResult
-            ? <Card
-            data={data}
-            quizId= {quizId}
-            quizLength = {quizLength}
-             />
-            : <Result
+  return (
+    <>
+      <h2>Quiz App</h2>
+      {showResult
+        ? <Result
+            quizLength={quizLength}
             score={score}
-            quizLength={quizLength} 
-            />
-        }
-        </>
-    )
-
-}
+            handleReset={handleReset} />
+        : <Card 
+            data={data}
+            quizLength={quizLength}
+            questionId={questionId}
+            handleAnswer={handleAnswer} />
+      }
+    </>
+  );
+};
