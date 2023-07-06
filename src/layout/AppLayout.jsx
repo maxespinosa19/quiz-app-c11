@@ -3,7 +3,7 @@ import NavMenu from "./NavMenu/NavMenu"
 export default function AppLayout({ children }){
     return(
         <>
-        <NavMenu/>
+        {/* <NavMenu/> */}
         {children}
         <Footer/>
         </>

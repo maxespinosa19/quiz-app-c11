@@ -1,15 +1,19 @@
-export default function Card({ quizLength, questionId, handleAnswer, 
-  data }) {
+const imageUri = process.env.PUBLIC_URL + '/images/';
 
-  return (
+export default function Card({ data, quizId, quizLength, handleAnswer }) {
+
+  return(
     <div className="quiz-card">
-      <p>{questionId + 1}/{quizLength}</p>
-      <h2>{data[questionId].question}</h2>
+      <h2>Guess The Movie <span>({quizId + 1}/{quizLength})</span></h2>
+      
+      <img src={imageUri + data[quizId].image} alt="" />
+
       <ul>
         {
-          data[questionId].options.map(
+          data[quizId].options.map(
             (element,index) => {
-              return (
+
+              return(
                 <li key={index}
                   onClick={ () => {handleAnswer(element.isCorrect)} }>{element.answer}</li>
               );
@@ -18,5 +22,5 @@ export default function Card({ quizLength, questionId, handleAnswer,
         }
       </ul>
     </div>
-  )
-}
+  );
+};

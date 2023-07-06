@@ -1,126 +1,133 @@
 [
     {
-        "id": 1,
-        "question": "What is the capital of France?",
-        "options": [
-            {
-                "answer": "Avengers",
-                "isCorrect": true
-            },
-            {
-                "answer": "Captain America",
-                "isCorrect": false
-            },
-            {
-                "answer": "Jarvis",
-                "isCorrect": false
-            },
-            {
-                "answer": "Superman",
-                "isCorrect": false
-            }
-        ]
+      "id": 1,
+      "image": "avenger.webp",
+      "options": [
+        {
+          "answer": "Avengers",
+          "isCorrect": true
+        },
+  
+        {
+          "answer": "Captain America",
+          "isCorrect": false
+        },
+  
+        {
+          "answer": "Superman",
+          "isCorrect": false
+        },
+  
+        {
+          "answer": "Jarvese",
+          "isCorrect": false
+        }
+      ]
     },
-
-
+  
     {
-        "id": 2,
-        "question": "What is the capital of Ireland?",
-        "options": [
-            {
-                "answer": "Kujo",
-                "isCorrect": false
-            },
-            {
-                "answer": "Sandlot",
-                "isCorrect": false
-            },
-            {
-                "answer": "Little Rascals",
-                "isCorrect": false
-            },
-            {
-                "answer": "Goonies",
-                "isCorrect": true
-            }
-        ] 
+      "id": 2,
+      "image": "goonies.webp",
+      "options": [
+        {
+          "answer": "Little Rascal",
+          "isCorrect": false
+        },
+  
+        {
+          "answer": "Sandlot",
+          "isCorrect": false
+        },
+  
+        {
+          "answer": "Kujo",
+          "isCorrect": false
+        },
+  
+        {
+          "answer": "Goonies",
+          "isCorrect": true
+        }
+      ]
     },
-    {
-
-        "id": 3,
-        "question": "What is the capital of England?",
-        "options": [
-            {
-                "answer": "Tropic Thunder",
-                "isCorrect": false
-            },
-
-            {
-                "answer": "Happy",
-                "isCorrect": false
-            },
-
-            {
-                "answer": "Iron Man",
-                "isCorrect": true
-            },
-
-            {
-                "answer": "Miss Pot",
-                "isCorrect": false
-            }
-        ]
-    },
-    {
-
-        "id": 4,
-        "question": "What is the capital of England?",
-        "options": [
-            {
-                "answer": "Bourne Identity",
-                "isCorrect": false
-            },
-
-            {
-                "answer": "Men in Black",
-                "isCorrect": false
-            },
-
-            {
-                "answer": "Matrix",
-                "isCorrect": true
-            },
-
-            {
-                "answer": "Speed",
-                "isCorrect": false
-            }
-        ]
-    },
-    {
-
-        "id": 5,
-        "question": "What is the capital of England?",
-        "options": [
-            {
-                "answer": "Soylent Peach",
-                "isCorrect": false
-            },
-
-            {
-                "answer": "Green Giant",
-                "isCorrect": false
-            },
-
-            {
-                "answer": "Shrek",
-                "isCorrect": true
-            },
-
-            {
-                "answer": "The Big Green",
-                "isCorrect": false
-            }
-        ]
-    }
-]
+  
+  
+  {
+    "id": 3,
+    "image": "ironman.jpg",
+    "options": [
+      {
+        "answer": "Miss Pot",
+        "isCorrect": false
+      },
+  
+      {
+        "answer": "Happy",
+        "isCorrect": false
+      },
+  
+      {
+        "answer": "IronMan",
+        "isCorrect": true
+      },
+  
+      {
+        "answer": "Tropic Thunder",
+        "isCorrect": false
+      }
+    ]
+  },
+  
+  {
+    "id": 4,
+    "image": "matrix.jpg",
+    "options": [
+      {
+        "answer": "Man in Black",
+        "isCorrect": false
+      },
+  
+      {
+        "answer": "Bourne Identity",
+        "isCorrect": false
+      },
+  
+      {
+        "answer": "Matrix",
+        "isCorrect": true
+      },
+  
+      {
+        "answer": "Speed",
+        "isCorrect": false
+      }
+    ]
+  },
+  
+  {
+    "id": 5,
+    "image": "shrek.jpg",
+    "options": [
+      {
+        "answer": "Soylent Green",
+        "isCorrect": false
+      },
+  
+      {
+        "answer": "Green Giant",
+        "isCorrect": false
+      },
+  
+      {
+        "answer": "Shrek",
+        "isCorrect": true
+      },
+  
+      {
+        "answer": "The Big Green",
+        "isCorrect": false
+      }
+    ]
+  }
+  
+  ]

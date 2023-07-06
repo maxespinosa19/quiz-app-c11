@@ -6,41 +6,49 @@ import "./QuizApp.css";
 
 const quizLength = data.length;
 
-export default function QuizApp() {
-  const [questionId, setQuestionId] = useState(0);
+export default function QuizApp () {
+  const [quizId, setQuizId] = useState(0);
   const [score, setScore] = useState(0);
   const [showResult, setShowResult] = useState(false);
 
   const handleAnswer = (isCorrect) => {
-    if (isCorrect) setScore(score + 1);
+    
+    /* If the answer is correct, increment the score by 1.
+      eg) if (isCorrect) setScore(score + 1); */
+    isCorrect && setScore(score + 1);
 
-    const newQuestionId = questionId + 1;
+    /* Increment the quizId by 1 once the user clicks on an answer. */
+    const newQuizId = quizId + 1;
 
-    (newQuestionId < quizLength) 
-      ? setQuestionId(newQuestionId)
+    /* If the quizId is less than the quizLength
+     then set the quizId to the newQuizId.
+     If not show results. */
+    (newQuizId < quizLength) 
+      ? setQuizId(newQuizId)
       : setShowResult(true);
-  }
+  };
 
   const handleReset = () => {
-    setQuestionId(0);
+    setQuizId(0);
     setScore(0);
     setShowResult(false);
-  }
-
-  return (
+  };
+  
+  return(
     <>
-      <h2>Quiz App</h2>
-      {showResult
-        ? <Result
-            quizLength={quizLength}
-            score={score}
-            handleReset={handleReset} />
-        : <Card 
+    {
+      !showResult
+        ? <Card
             data={data}
+            quizId={quizId}
             quizLength={quizLength}
-            questionId={questionId}
             handleAnswer={handleAnswer} />
-      }
+
+        : <Result
+            score={score}
+            quizLength={quizLength}
+            handleReset={handleReset} />
+    }
     </>
   );
 };
