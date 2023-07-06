@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "question": "What is the capital of France?",
+        "options": [
+            {
+                "answer": "Paris",
+                "isCorrect": true
+            },
+            {
+                "answer": "New York",
+                "isCorrect": false
+            },
+            {
+                "answer": "London",
+                "isCorrect": false
+            },
+            {
+                "answer": "Dublin",
+                "isCorrect": false
+            }
+        ]
+    },
+
+
+    {
+        "id": 2,
+        "question": "What is the capital of Ireland?",
+        "options": [
+            {
+                "answer": "Paris",
+                "isCorrect": false
+            },
+            {
+                "answer": "New York",
+                "isCorrect": false
+            },
+            {
+                "answer": "London",
+                "isCorrect": false
+            },
+            {
+                "answer": "Dublin",
+                "isCorrect": true
+            }
+        ] 
+    },
+    {
+
+        "id": 3,
+        "question": "What is the capital of England?",
+        "options": [
+            {
+                "answer": "Paris",
+                "isCorrect": false
+            },
+
+            {
+                "answer": "New York",
+                "isCorrect": false
+            },
+
+            {
+                "answer": "London",
+                "isCorrect": true
+            },
+
+            {
+                "answer": "Dublin",
+                "isCorrect": false
+            }
+        ]
+    }
+]
