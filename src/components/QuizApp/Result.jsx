@@ -4,7 +4,7 @@ export default function Result({score, handleReset, quizLength}){
     <div className="quiz-card" >
         <h3> Result </h3>
         <p>Your score {score} out of {quizLength}</p>
-        <button onClick = {handleReset}></button>
+        <button onClick = {handleReset}>Restart</button>
     </div>
     )
 }
