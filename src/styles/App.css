@@ -32,3 +32,8 @@ a:hover{
 
 }
 
+footer p {
+  color: rgba(9, 16, 163, 0.95);
+  font-weight: 500;
+}
+
