@@ -9,7 +9,8 @@
     padding: 10px;
     display: flex;
     margin: auto;
-    background-color: #ffa340;
+    background-color: #f56517;
+    color: rgb(240, 232, 202);
     font-size: 20px;
     border-radius: 10px;
     margin-top: 20px;
@@ -21,7 +22,7 @@
    
 }
 .results button:hover{
-    background-color:rgb(255, 106, 0);
+    background-color:rgb(255, 77, 0);
     transform: scale(1.1);
     transition: 100ms ease-in
 
@@ -30,8 +31,12 @@
 .results h3, p {
     font-size: 20px;
     text-align: center;
+    color: rgb(23, 2, 30)
 }
 
+.results h3 {
+    font-size: 40px;
+}
 
 
 

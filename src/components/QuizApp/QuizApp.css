@@ -11,6 +11,7 @@
 .quiz-card h2 {
    font-size: clamp(2.2rem, 4vw, 2.9rem);
    text-align: center;
+   color: rgb(23, 2, 30);
    margin-top: 0;
 }
 .quiz-card h2 span {
